@@ -165,9 +165,36 @@ print(myfile.read())
 myfile.seek(0) # To reset read otherwise when call read() again, nothing can be read
 
 print(myfile.readlines())
- 
+myfile.close() # Error if no close()
 
+with open('pythonReview.txt', mode = 'r') as my_new_file:
+	contents = my_new_file.read()
+	print(contents)
+# r : reading
+# w : writing/ over writing/ creating a new file if not exist
+# a : adding
+# r+ : reading and writing
+# w+ : over writing and reading 
 
+with open('pythonReview.txt', mode = 'r') as f:
+	print(f.read())
+
+with open('pythonReview.txt', mode = 'a') as f:
+	f.write('\nFOUR ON FOURTH')
+
+with open('newPythonReview.txt', mode = 'w') as f:
+	f.write('I CREATED THIS NEW FILE') 
+
+########################################################################################################################################
+# Python comparision
+print(1 == 1, 1 == 2, 'hello' == 'bye', 2.0 == 2, 3 >= 3, 3 != 3)
+
+print(1 < 2 and 2 < 3)
+print((1 < 2) and (2 < 3))
+print(100 == 1 or 1 == 1)
+print(not 1 == 1)
+
+########################################################################################################################################
 
 
 
