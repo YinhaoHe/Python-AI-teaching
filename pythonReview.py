@@ -134,8 +134,38 @@ print(myDict.values())
 print(myDict.items())
 
 ########################################################################################################################################
+# Python Tuples
+t = ('one', 2, 3.0)
+l = [1, 2, 3]
+print(type(t), len(t), t[0], t[-1]) 
 
+t = ('a', 'a', 'b')
+print(t.count('a'), t.index('a')) # count() times of a; index() first time showup of a
 
+########################################################################################################################################
+# Python set: no replicated element in set
+mySet = set()
+mySet.add(1)
+mySet.add(2)
+print(mySet)
+
+myList = [5,5,5,5,2,22,8,5,11,1,1,1,1,1] # remove duplicated elements when call set()
+print(set(myList))
+
+########################################################################################################################################
+# Python boolean
+b = None
+print(1 == 1, 1 > 2, type(True), b)
+
+########################################################################################################################################
+# file I/O
+myfile = open('pythonReview.txt')
+print(myfile.read())
+
+myfile.seek(0) # To reset read otherwise when call read() again, nothing can be read
+
+print(myfile.readlines())
+ 
 
 
 
