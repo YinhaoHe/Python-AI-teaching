@@ -195,9 +195,24 @@ print(100 == 1 or 1 == 1)
 print(not 1 == 1)
 
 ########################################################################################################################################
+# if Elif Else
+happy = True
 
+if happy:
+	print('Smile')
+else:
+	print('Cry')
 
+loc = 'Bank'
 
+if loc == 'Auto Shop':
+	print("Cars")
+elif loc == 'Bank':
+	print("Money")
+elif loc == 'Store':
+	print("Goods")
+else:
+	print("IDK")
 
 
 
