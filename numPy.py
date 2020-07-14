@@ -74,6 +74,3 @@ print(arr_copy)
 
 
 
-
-
-
