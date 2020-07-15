@@ -60,7 +60,17 @@ slice_of_array[:] = 99 # This will influence the original array.
 arr_copy = arr.copy()
 print(arr_copy)
 
+res1 = np.column_stack((a,b))
+res2 = np.row_stack((a,b))
 
+a1 = np.arange(0, 9999, 1).reshape(9999, 1)
+a2 = np.random.randint(1945,2020, size = (9999, 1))
+
+a = numpy.random.randint(100, 200, size = (1, 100))
+a.reshape(10, 10)
+
+np.concatenate()
+np.vstack
 
 
 
