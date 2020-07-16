@@ -14,5 +14,7 @@ print(data)
 # for n in a:
 # 	d[chr(n + 96)] = n
 # 	d[chr(n + 64)] = n
+
+# print(d)
 # p = pd.Series(d)
 # print(p)
