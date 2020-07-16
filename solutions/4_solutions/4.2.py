@@ -13,3 +13,28 @@ plt.ylabel('y - axis')
 plt.title('Sample graph!')
 # Display a figure.
 plt.show()
+
+
+
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+
+x = []
+y = []
+sets = int(input("Enter the number of sets of values: "))
+for _ in range(sets):
+	x.append(int(input("Enter x: ")))
+for _ in range(sets):
+	y.append(int(input("Enter y: ")))
+
+plt.plot(x, y, 'go-')
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+
+plt.show()
+plt.savefig('line.png')
