@@ -167,6 +167,8 @@ myfile.seek(0) # To reset read otherwise when call read() again, nothing can be 
 print(myfile.readlines())
 myfile.close() # Error if no close()
 
+print("************************************************************************")
+
 with open('pythonReview.txt', mode = 'r') as my_new_file:
 	contents = my_new_file.read()
 	print(contents)
@@ -184,6 +186,8 @@ with open('pythonReview.txt', mode = 'a') as f:
 
 with open('newPythonReview.txt', mode = 'w') as f:
 	f.write('I CREATED THIS NEW FILE') 
+
+print("************************************************************************")
 
 ########################################################################################################################################
 # Python comparision
